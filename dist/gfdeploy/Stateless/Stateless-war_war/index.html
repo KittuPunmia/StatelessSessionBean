@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bank Stateless Session bean</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        
+           
+         Select Customer :    
+    <br><br>
+    <form action="BankServer" method="POST">
+        <select name="AccNo">
+            <option value="0">101</option>
+            <option value="1">102</option>
+            <option value="2">103</option>
+            <option value="3">104</option>
+            <option value="4">105</option>
+            <option value="5">106</option>
+            <option value="6">107</option>
+        </select>   
+    <br> <br>
+    
+    <input type="submit" value="Check Balance" name="book" />
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    </form>
+         Select Customer :    
+    <br><br>
+    <form action="BankWithdraw" method="POST">
+        <select name="AccNo">
+            <option value="0">101</option>
+            <option value="1">102</option>
+            <option value="2">103</option>
+            <option value="3">104</option>
+            <option value="4">105</option>
+            <option value="5">106</option>
+            <option value="6">107</option>
+        </select>   
+    <br> <br>
+    Enter amount:<input type="text" name="amount" value="" />
+    <input type="submit" value="Withdraw" name="book" />
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    </form>
+    <br>
+    <br>
+       <form action="BankDeposit" method="POST">
+        <select name="AccNo">
+            <option value="0">101</option>
+            <option value="1">102</option>
+            <option value="2">103</option>
+            <option value="3">104</option>
+            <option value="4">105</option>
+            <option value="5">106</option>
+            <option value="6">107</option>
+        </select>   
+    <br> <br>
+    <input type="text" name="amount" value="" />
+    <input type="submit" value="Deposit" name="book" />
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    </form> 
+    
+    <br>
+      <form action="BankTransaction" method="POST">
+        <select name="AccNo">
+            <option value="0">101</option>
+            <option value="1">102</option>
+            <option value="2">103</option>
+            <option value="3">104</option>
+            <option value="4">105</option>
+            <option value="5">106</option>
+            <option value="6">107</option>
+        </select>   
+    <br> <br>
+   
+    <input type="submit" value="TransactionDetails" name="book" />
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    </form> 
+             
+     
+    </body>
+</html>

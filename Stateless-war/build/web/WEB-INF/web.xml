@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>BankServer</servlet-name>
+        <servlet-class>BankServer.BankServer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BankWithdraw</servlet-name>
+        <servlet-class>BankServer.BankWithdraw</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BankTransaction</servlet-name>
+        <servlet-class>BankServer.BankTransaction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BankServer</servlet-name>
+        <url-pattern>/BankServer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BankWithdraw</servlet-name>
+        <url-pattern>/BankWithdraw</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BankTransaction</servlet-name>
+        <url-pattern>/BankTransaction</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
